@@ -1,0 +1,144 @@
+.cuNav {
+  background: #00001a;
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+  transition: box-shadow 0.3s ease;
+  /* transition duration and easing */
+}
+
+.cuNav:hover {
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.134);
+  /* updated box shadow on hover */
+}
+
+.cuNavItem {
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+.cuNavItem:hover {
+  transform: scale(1.4);
+  color: #33ffd6;
+}
+
+.cuBody {
+  background: #00001a;
+  margin: 0;
+  padding: 0;
+}
+
+.cuText {
+  color: #33ffd6;
+}
+
+.cuIcon {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.cuIcon:hover {
+  transform: scale(1.6);
+}
+
+.cuIcon2 {
+  color: #00ff00;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cuIcon2:hover {
+  transform: scale(1.2);
+}
+
+.cuProgressbar {
+  background: #00ff00;
+}
+
+.cuGridItem {
+  color: antiquewhite;
+  background-color: rgba(0, 7, 62, 0.36);
+  border-radius: 9px;
+  border: solid 1px #33ffd6;
+}
+
+/* .imageContainer {
+  perspective: 1000px;
+
+  width: 500px;
+
+  height: 500px;
+
+} */
+
+.projectImage1 {
+  transition: transform 0.5s ease-in-out;
+  width: 90%;
+  /* set the width of the image to 100% of the container */
+  height: auto;
+  /* set the height of the image to auto */
+  transform: perspective(1000px) rotateY(45deg) rotateX(18deg);
+  /* move the image back along the Z-axis */
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+}
+
+.projectImage1:hover {
+  width: 90%;
+  /* set the width of the image to 100% of the container */
+  height: auto;
+  /* set the height of the image to auto */
+  transform: perspective(1000px) rotateY(-21deg) rotateX(18deg) scale(1.2);
+  /* move the image back along the Z-axis */
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+  
+}
+
+.projectFont {
+  font-family: 'Cabin', sans-serif;
+  color: #00ff00;
+}
+
+.projectImage2 {
+  transition: transform 0.5s ease-in-out;
+  width: 90%;
+  /* set the width of the image to 100% of the container */
+  height: auto;
+  /* set the height of the image to auto */
+  transform: perspective(1000px) rotateY(-45deg) rotateX(18deg);
+  /* move the image back along the Z-axis */
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+}
+
+.projectImage2:hover {
+  width: 90%;
+  /* set the width of the image to 100% of the container */
+  height: auto;
+  /* set the height of the image to auto */
+  transform: perspective(1000px) rotateY(21deg) rotateX(18deg) scale(1.2);
+  /* move the image back along the Z-axis */
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+}
+
+.contact {
+  background-image: linear-gradient(to right , #000000 , #000066);
+}
+
+/* #carouselExampleIndicators .carousel-inner img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #myCarousel {
+    height: 300px; 
+  }
+}
+
+@media (min-width: 768px) {
+  #myCarousel {
+    height: 500px; 
+  }
+} */
