@@ -18,7 +18,7 @@
 }
 
 .cuNavItem:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   color: #33ffd6;
 }
 
@@ -35,22 +35,90 @@
 .cuIcon {
   position: relative;
   transition: transform 0.3s ease-in-out;
+  color: #28a745;
   align-items: center;
   text-align: center;
   align-content: center;
 }
 
 .cuIcon:hover {
-  transform: scale(1.6);
+  transform: scale(1.3);
+  color: #00ffff;
+  
 }
 
 .cuIcon2 {
-  color: #00ff00;
+  color: #00ff0071;
   transition: transform 0.3s ease-in-out;
 }
 
 .cuIcon2:hover {
   transform: scale(1.2);
+  color: #00ff00;
+}
+
+.cuIconPhone {
+  color: aqua;
+}
+
+.cuIconPhone:hover {
+  animation: shake 1s infinite;
+}
+
+.cuIconEmail {
+  color: aqua;
+}
+
+.cuIconEmail:hover {
+  animation: shake 1s infinite;
+}
+
+.cuIconLocation {
+  color: aqua;
+}
+
+.cuIconLocation:hover {
+  animation: shake2 1s infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes shake2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(5px);
+  }
 }
 
 .cuProgressbar {
@@ -121,24 +189,35 @@
   box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
 }
 
-.contact {
+.freelance {
   background-image: linear-gradient(to right , #000000 , #000066);
 }
 
-/* #carouselExampleIndicators .carousel-inner img {
-  width: 100%;
-  height: auto; 
-  object-fit: cover;
+.carouselContent {
+  border: solid 1px #00ffff;
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
 }
 
-@media (max-width: 768px) {
-  #myCarousel {
-    height: 300px; 
-  }
+.cuForm {
+  background-color: #00ffff8b;
 }
 
-@media (min-width: 768px) {
-  #myCarousel {
-    height: 500px; 
-  }
-} */
+.cuForm:active {
+  background-color: #00ffff;
+}
+
+.cuForm:focus {
+  background-color: #00ffff;
+}
+
+.footer {
+  background-color: #030332;
+  border-top-left-radius: 270px;
+  margin-bottom: 0;
+}
+
+.copyrightText {
+  font-family: 'IBM Plex Serif', serif;
+  color: rgb(255, 233, 203);
+}
+
