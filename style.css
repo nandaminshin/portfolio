@@ -1,0 +1,330 @@
+.root {
+  margin: 0;
+  padding: 0;
+}
+
+
+.cuNav {
+  background: #00001a;
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+  transition: box-shadow 0.3s ease;
+  /* transition duration and easing */
+}
+
+.cuNav:hover {
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.134);
+  /* updated box shadow on hover */
+}
+
+.cuNavItem {
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+.cuNavItem:hover {
+  transform: scale(1.2);
+  color: #33ffd6;
+}
+
+.cuBody {
+  background: #00001a;
+
+}
+
+.cuText {
+  color: #33ffd6;
+}
+
+@media (max-width: 576px) {
+  .img-container img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+}
+
+
+.cuIcon {
+  font-size: 36px;
+  transition: transform 0.3s ease-in-out;
+  color: #28a745;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.cuIcon:hover {
+  transform: scale(1.6);
+  color: #00ffff;
+  
+}
+
+.cuIcon2 {
+  color: #00ff0071;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cuIcon2:hover {
+  transform: scale(1.2);
+  color: #00ff00;
+}
+
+.cuIconPhone {
+  color: aqua;
+}
+
+.cuIconPhone:hover {
+  animation: shake 1s infinite;
+}
+
+.cuIconEmail {
+  color: aqua;
+}
+
+.cuIconEmail:hover {
+  animation: shake 1s infinite;
+}
+
+.cuIconLocation {
+  color: aqua;
+}
+
+.cuIconLocation:hover {
+  animation: shake2 1s infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes shake2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(5px);
+  }
+}
+
+.cuProgressbar {
+  background: #00ff00;
+}
+
+.cuGridItem {
+  color: antiquewhite;
+  background-color: rgba(0, 7, 62, 0.36);
+  border-radius: 9px;
+  border: solid 1px #33ffd6;
+}
+
+@media (max-width: 576px) {
+  .cuGridItem p {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projectInfo h4 {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projectInfo h2 {
+    font-size: 14px;
+  }
+}
+
+.projectImage1 {
+  transition: transform 0.5s ease-in-out;
+  width: 90%;
+  /* set the width of the image to 100% of the container */
+  height: auto;
+  /* set the height of the image to auto */
+  transform: perspective(1000px) rotateY(45deg) rotateX(18deg);
+  /* move the image back along the Z-axis */
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+}
+
+.projectImage1:hover {
+  width: 90%;
+  /* set the width of the image to 100% of the container */
+  height: auto;
+  /* set the height of the image to auto */
+  transform: perspective(1000px) rotateY(-21deg) rotateX(18deg) scale(1.2);
+  /* move the image back along the Z-axis */
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+  
+}
+
+.projectFont {
+  font-family: 'Cabin', sans-serif;
+  color: #00ff00;
+}
+
+.projectImage2 {
+  transition: transform 0.5s ease-in-out;
+  width: 90%;
+  /* set the width of the image to 100% of the container */
+  height: auto;
+  /* set the height of the image to auto */
+  transform: perspective(1000px) rotateY(-45deg) rotateX(18deg);
+  /* move the image back along the Z-axis */
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+}
+
+.projectImage2:hover {
+  width: 90%;
+  /* set the width of the image to 100% of the container */
+  height: auto;
+  /* set the height of the image to auto */
+  transform: perspective(1000px) rotateY(21deg) rotateX(18deg) scale(1.2);
+  /* move the image back along the Z-axis */
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+}
+
+.freelance {
+  background-image: linear-gradient(to right , #000000 , #000066);
+}
+
+.carouselContent {
+  border: solid 1px #00ffff;
+  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 350px) {
+  #carouselExampleIndicators {
+    max-height: 470px;
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-indicators button {
+    max-width: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-inner img,
+  #carouselExampleIndicators .carousel-inner h1,
+  #carouselExampleIndicators .carousel-inner h3,
+  #carouselExampleIndicators .carousel-inner i,
+  #carouselExampleIndicators .carousel-inner p {
+    font-size: 9px; /* set your desired font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-inner h1 {
+    font-size: 16px; /* set your desired font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-inner h3 {
+    font-size: 12px; /* set your desired font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .contactInfo h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactInfo h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  #formInfo .d-flex h3,
+  #formInfo .d-flex i,
+  #formInfo .d-flex p {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 576px) {
+  #formInfo .d-flex h3 {
+    font-size: 14px;
+  }
+}
+
+
+.cuForm {
+  background-color: #00ffff8b;
+}
+
+.cuForm:active {
+  background-color: #00ffff;
+}
+
+.cuForm:focus {
+  background-color: #00ffff;
+}
+
+.footer {
+  background-color: #030332;
+  border-top-left-radius: 270px;
+  margin-bottom: 0;
+}
+
+.copyrightText {
+  font-family: 'IBM Plex Serif', serif;
+  color: rgb(255, 233, 203);
+}
+
+@media (max-width: 576px) {
+  .footer h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer p {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer a {
+    font-size: 12px;
+  }
+}
+
