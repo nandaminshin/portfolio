@@ -147,19 +147,19 @@
 
 @media (max-width: 576px) {
   .cuGridItem p {
-    font-size: 9px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 576px) {
   .projectInfo h4 {
-    font-size: 9px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 576px) {
   .projectInfo h2 {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -244,7 +244,7 @@
   #carouselExampleIndicators .carousel-inner h3,
   #carouselExampleIndicators .carousel-inner i,
   #carouselExampleIndicators .carousel-inner p {
-    font-size: 9px; /* set your desired font size for smaller screens */
+    font-size: 12px; /* set your desired font size for smaller screens */
   }
 }
 
@@ -256,7 +256,7 @@
 
 @media (max-width: 576px) {
   #carouselExampleIndicators .carousel-inner h3 {
-    font-size: 12px; /* set your desired font size for smaller screens */
+    font-size: 14px; /* set your desired font size for smaller screens */
   }
 }
 
@@ -273,16 +273,15 @@
 }
 
 @media (max-width: 576px) {
-  #formInfo .d-flex h3,
   #formInfo .d-flex i,
   #formInfo .d-flex p {
-    font-size: 9px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 576px) {
   #formInfo .d-flex h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -312,19 +311,19 @@
 
 @media (max-width: 576px) {
   .footer h3 {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
   .footer p {
-    font-size: 9px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 576px) {
   .footer a {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
