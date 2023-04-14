@@ -222,15 +222,10 @@
 
 @media (max-width: 576px) {
   #carouselExampleIndicators {
-    max-height: 400px;
+    max-height: 500px;
   }
 }
 
-@media (max-width: 350px) {
-  #carouselExampleIndicators {
-    max-height: 470px;
-  }
-}
 
 @media (max-width: 576px) {
   #carouselExampleIndicators .carousel-indicators button {
@@ -240,11 +235,10 @@
 
 @media (max-width: 576px) {
   #carouselExampleIndicators .carousel-inner img,
-  #carouselExampleIndicators .carousel-inner h1,
-  #carouselExampleIndicators .carousel-inner h3,
+
   #carouselExampleIndicators .carousel-inner i,
   #carouselExampleIndicators .carousel-inner p {
-    font-size: 12px; /* set your desired font size for smaller screens */
+    font-size: 10px; /* set your desired font size for smaller screens */
   }
 }
 
