@@ -1,8 +1,15 @@
+.root {
+  margin: 0;
+  padding: 0;
+}
+
 .cuNav {
-  background: #00001a;
+  /* background: #00001a; */
+  background: #000000c6;
   color: white;
   width: 100%;
-  box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+  /* box-shadow: 0 0 45px rgba(51, 255, 214, 0.204); */
+  box-shadow: 0 0 9px rgba(255, 255, 255, 0.341);
   transition: box-shadow 0.3s ease;
   /* transition duration and easing */
 }
@@ -23,18 +30,26 @@
 }
 
 .cuBody {
-  background: #00001a;
-  margin: 0;
-  padding: 0;
+  /* background: #00001a; */
+  background: #000000;
 }
 
 .cuText {
   color: #33ffd6;
 }
 
+@media (max-width: 576px) {
+  .img-container img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+}
+
 .cuIcon {
-  position: relative;
-  transition: transform 0.3s ease-in-out;
+  font-size: 36px;
+  transition:
+    transform 0.3s,
+    color 0.3s;
   color: #28a745;
   align-items: center;
   text-align: center;
@@ -42,9 +57,8 @@
 }
 
 .cuIcon:hover {
-  transform: scale(1.3);
+  transform: scale(1.6);
   color: #00ffff;
-  
 }
 
 .cuIcon2 {
@@ -132,14 +146,23 @@
   border: solid 1px #33ffd6;
 }
 
-/* .imageContainer {
-  perspective: 1000px;
+@media (max-width: 576px) {
+  .cuGridItem p {
+    font-size: 12px;
+  }
+}
 
-  width: 500px;
+@media (max-width: 576px) {
+  .projectInfo h4 {
+    font-size: 16px;
+  }
+}
 
-  height: 500px;
-
-} */
+@media (max-width: 576px) {
+  .projectInfo h2 {
+    font-size: 18px;
+  }
+}
 
 .projectImage1 {
   transition: transform 0.5s ease-in-out;
@@ -160,11 +183,10 @@
   transform: perspective(1000px) rotateY(-21deg) rotateX(18deg) scale(1.2);
   /* move the image back along the Z-axis */
   box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
-  
 }
 
 .projectFont {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   color: #00ff00;
 }
 
@@ -190,12 +212,69 @@
 }
 
 .freelance {
-  background-image: linear-gradient(to right , #000000 , #000066);
+  background-image: linear-gradient(to right, #000000, #000066);
 }
 
 .carouselContent {
   border: solid 1px #00ffff;
   box-shadow: 0 0 45px rgba(51, 255, 214, 0.204);
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-indicators button {
+    max-width: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-inner img,
+  #carouselExampleIndicators .carousel-inner i,
+  #carouselExampleIndicators .carousel-inner p {
+    font-size: 10px; /* set your desired font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-inner h1 {
+    font-size: 16px; /* set your desired font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-inner h3 {
+    font-size: 14px; /* set your desired font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .contactInfo h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactInfo h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  #formInfo .d-flex i,
+  #formInfo .d-flex p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  #formInfo .d-flex h3 {
+    font-size: 16px;
+  }
 }
 
 .cuForm {
@@ -217,7 +296,76 @@
 }
 
 .copyrightText {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: "IBM Plex Serif", serif;
   color: rgb(255, 233, 203);
 }
 
+@media (max-width: 576px) {
+  .footer h3 {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer p {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer a {
+    font-size: 9px;
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#loginForm {
+  border: solid black 1px;
+  border-radius: 9px;
+}
+
+.modal-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: #444;
+}
