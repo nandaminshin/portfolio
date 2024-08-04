@@ -1,39 +1,29 @@
-const Message = require('../Models/Message');
+const sendEmail = require('../mailer');
 
 const MainController = {
-  index: (req, res) => {
-    res.render('index');
-  },
+    index: (req, res) => {
+        res.render('index');
+    },
 
-  inbox: async (req, res) => {
-    let { name, email, subject, messageBody } = req.body;
-    let message = new Message({
-      name: name,
-      email: email,
-      subject: subject,
-      messageBody: messageBody
-    });
-    await message.save()
-    res.redirect('/');
-  },
+    sendEmail: (req, res) => {
+        const { name, email, subject, message } = req.body;
 
-  checkMessage: async (req, res) => {
-    let messages = await Message.find();
-    res.render('checkMessage', {
-      messages
-    });
-  },
+        const emailContent = `
+        Name: ${name}
+        Email: ${email}
+        Subject: ${subject}
+        Message: ${message}
+    `;
 
-  destoryMessage: async (req, res, next) => {
-    try {
-      let id = req.params.id;
-      await Message.findByIdAndDelete(id);
-      res.redirect('/check-inbox');
-    } catch (error) {
-      console.log(error);
-      next();
-    }
-  }
+        sendEmail(email, 'onayi7777@gmail.com', subject, emailContent) // Use user's email as 'from' and your email as 'to'
+            .then(() => {
+                res.render('index');
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error); // Log the error details
+                res.status(500).send(`Error sending message: ${error.message}`);
+            });
+    },
 
 
 }
