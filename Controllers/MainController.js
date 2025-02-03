@@ -1,4 +1,5 @@
 const sendEmail = require('../mailer');
+const path = require("path");
 
 const MainController = {
     index: (req, res) => {
@@ -24,6 +25,16 @@ const MainController = {
                 res.status(500).send(`Error sending message: ${error.message}`);
             });
     },
+
+    downloadCV: (req, res) => {
+        const filePath = path.resolve("Files/MyCV.pdf");
+        res.download(filePath, 'MyCV.pdf', (err) => {
+            if (err) {
+                console.error("File download error:", err);
+                res.status(500).send("Error downloading the file");
+            }
+        })
+    }
 
 
 }
